@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+
 #define horizontal 20 //(x)
 #define vertical 60 //(y)
 
@@ -12,7 +13,8 @@ void sair(){
 	saida:
 	system("pause");
 
-void creditos(){
+void creditos()
+{
 	
 	creditos:
 	
@@ -23,7 +25,7 @@ void creditos(){
 	
 	switch(val){
 		case 1:
-			goto menu;
+			goto main;
 		break;
 		case 2:
 			cout<< "Sair do jogo?";
@@ -49,9 +51,9 @@ void jogo(){
 	
 }
 
-void menu(){
+int main(){
 	
-menu:
+main:
 	
 cout <<  "   _____ _    _  ____   ____ _______ ______ _____  ";
 cout <<  "  / ____| |  | |/ __ \ / __ \__   __|  ____|  __ \ ";
